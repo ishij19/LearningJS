@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('Interior-National-Gallery-of-Art-Washington-DC.webp'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333; 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Header Bar */
+.header {
+  background-color: rgba(222, 42, 42, 0.9); /* Bright red tone with opacity */
+  width: 100%;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h2 {
+  font-size: 30px;
+  font-family: 'Lobster', cursive; /* Creative font for title */
+  color: #fff;
+}
+
+/* Main Content Styles */
+.main-content {
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.main-content header h1 {
+  font-size: 36px;
+  color: #ea2626; /* Matching color from header */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.intro p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.visit-info {
+  margin-top: 20px;
+}
+
+.visit-info h3 {
+  font-size: 22px;
+  color: #ef3838;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+.visit-info p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Chatbot Section Styles */
+.chatbot {
+  width: 35%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-header h2 {
+  font-size: 24px;
+  color: #ec3232;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+.chatbot-header p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.chatbot-body label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.chatbot-body input,
+.chatbot-body select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dropdowns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdowns select {
+  width: 48%;
+}
+
+.timings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.timings button {
+  width: 23%;
+  padding: 10px;
+  background-color: #33c038;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.timings button:hover {
+  background-color: #2db034;
+}
+
+.book-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #e82828;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.book-btn:hover {
+  background-color: #e13030;
+}
+.nav {
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+.nav a {
+font-family: 'Poppins', sans-serif;
+color: #fff;
+text-decoration: none;
+font-size: 16px;
+padding: 8px 15px;
+border-radius: 5px;
+transition: background-color 0.3s;
+}
+.museum-details {
+background-color: rgba(255, 255, 255, 0.9);
+padding: 20px;
+border-radius: 10px;
+margin-top: 20px;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.museum-details h2 {
+font-size: 30px;
+color: #ec3232;
+font-family: 'Montserrat', sans-serif;
+}
+
+.museum-details h3 {
+font-size: 24px;
+color: #ec3030;
+font-family: 'Montserrat', sans-serif;
+margin-top: 15px;
+}
+
+.museum-details p {
+font-size: 16px;
+line-height: 1.6;
+margin-top: 10px;
+}
+
+.museum-details ul {
+list-style-type: disc;
+margin-left: 20px;
+}
+
+.museum-details ul li {
+font-size: 16px;
+margin-bottom: 10px;
+}
+/* Chatbot Widget Styling */
+#bp-web-widget {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 350px;
+  height: 500px;
+  border: 2px solid #ff6666; /* Add border color to match your theme */
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  background-color: white; /* Ensures that the chatbot widget looks clear */
+}
+
+/* Ensure Chatbot Widget Responsiveness */
+@media (max-width: 768px) {
+  #bp-web-widget {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    height: 60%;
+    border-radius: 0;
+  }
+}
+/* Museum Events Section Styling */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Adds space between the main content and the events */
+}
+
+.main-content {
+  flex: 2; /* The main content takes more space */
+}
+
+.museum-events {
+  flex: 1; /* Museum events take up less space */
+  background-color: #cebfbf;
+  padding: 20px;
+  border: 1px solid #090909;
+  border-radius: 8px;
+}
+
+/* Button Hover Effects */
+.timings button, .book-btn, .nav a {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.timings button:hover, .book-btn:hover, .nav a:hover {
+  background-color: #2db034; /* Different shade for hover */
+  transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Navbar Links Hover */
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Light background on hover */
+  color: #e82828; /* Changing color on hover */
+}
+
+/* Fade-In Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply Fade-In Animation */
+.main-content, .chatbot, .museum-details, .museum-events {
+  animation: fadeIn 1s ease-out;
+}
+/* Slide-In from Top */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply Slide-In Animation to Header */
+.header {
+  animation: slideIn 0.8s ease-out;
+}
+/* Chatbot Pop-In Animation */
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply Pop-In Animation to Chatbot Widget */
+#bp-web-widget {
+  animation: popIn 0.5s ease-out;
+}
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+/* Pulsing Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+}
+
+/* Apply Pulse Animation to Important Buttons */
+.book-btn {
+  animation: pulse 1.5s infinite;
+}
+/* Image Hover Zoom-In Effect */
+.gallery img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1); /* Zooms in the image */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+}
+/* Fade-In Animation */
+@keyframes imageFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply Fade-In Animation to Images */
+.gallery img {
+  animation: imageFadeIn 0.8s ease-out;
+}
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Apply Bounce Animation to Specific Images */
+.featured-image {
+  animation: bounce 2s infinite;
+}
+/* Subtle Transition Effect */
+.museum-details img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.museum-details img:hover {
+  transform: scale(1.05); /* Slight zoom-in */
+  filter: brightness(1.1); /* Increase brightness */
+}
+/* Flip Animation */
+.flip-card {
+  perspective: 1000px; /* Define perspective */
+}
+
+.flip-card img {
+  transition: transform 0.6s;
+  transform-style: preserve-3d; /* Maintain 3D space */
+}
+
+.flip-card img:hover {
+  transform: rotateY(180deg); /* Flip the image */
+}
+/* Gradient Background Animation */
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Chatbot Widget Animation */
+#bp-web-widget {
+  animation: popIn 0.5s ease-out, pulseChatbot 2s infinite;
+}
+
+@keyframes pulseChatbot {
+  0% {
+    box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.5);
+  }
+}
+
+
