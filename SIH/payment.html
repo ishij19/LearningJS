@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout - Ticket Booking</title>
+    <link rel="stylesheet" href="payment.css"> <!-- Link to external CSS file -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Complete Your Booking</h1>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <ul>
+                <li>Event: <strong>Concert XYZ</strong></li>
+                <li>Date: <strong>15th December 2024</strong></li>
+                <li>Location: <strong>City Arena</strong></li>
+                <li>Tickets: <strong>2</strong> Adult Tickets</li>
+                <li>Price per Ticket: <strong>₹ 1200</strong></li>
+                <li class="total-price">Total: <strong>₹ 2400</strong></li>
+            </ul>
+        </div>
+
+        <!-- Payment Method -->
+        <div class="payment-method">
+            <h2>Payment Details</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- Payment Gateway Button -->
+                <div class="form-group">
+                    <button type="button" class="btn" id="razorpay-button">Pay ₹2400</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2024 Ticket Booking. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Link to external JS file -->
+    <script src="payment.js"></script>
+    <!-- Razorpay Checkout Script -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</body>
+
+</html>

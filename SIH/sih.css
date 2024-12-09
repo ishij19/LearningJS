@@ -22,7 +22,7 @@ body {
 
 /* Header Bar */
 .header {
-  background-color: rgba(222, 42, 42, 0.9); /* Bright red tone with opacity */
+  background-color: #8174A0; /* Bright red tone with opacity */
   width: 100%;
   padding: 15px;
   position: sticky;
@@ -43,7 +43,7 @@ body {
 /* Main Content Styles */
 .main-content {
   width: 60%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #eff1f3ce;
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
@@ -263,7 +263,7 @@ margin-bottom: 10px;
 
 .museum-events {
   flex: 1; /* Museum events take up less space */
-  background-color: #cebfbf;
+  background-color: #A888B5;
   padding: 20px;
   border: 1px solid #090909;
   border-radius: 8px;
